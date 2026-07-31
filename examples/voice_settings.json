@@ -1,0 +1,7 @@
+{
+  "voice": "en-US-AriaNeural",
+  "pitch": "+0Hz",
+  "volume": "+0%",
+  "adaptive_tts_rate": true,
+  "notes": "Use python main.py --list-voices to review currently available English voices."
+}
