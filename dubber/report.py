@@ -62,6 +62,7 @@ def build_quality_report(
         },
         "quality_gates": {
             "output_exists": output_video.exists() and output_video.stat().st_size > 0,
+            "audio_duration_seconds": round(audio_duration, 3),
             "duration_drift_seconds": round(av_drift, 3),
             "duration_gate_passed": av_drift <= 0.75,
             "mean_tempo_factor": round(statistics.mean(tempo_factors), 3)
