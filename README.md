@@ -2,17 +2,17 @@
 
 A production-style Python pipeline that accepts a permitted YouTube URL and creates an English-dubbed MP4 while preserving the original video stream and speech timing.
 
-**Built for the Idealabs Digital internship assignment by Sai Divya Lanka.**
+**Built for the Idealabs Digital internship assignment by Shreya Lanka.**
 
-## Why this submission is different
+## Design goals
 
-Most submissions will connect four libraries and stop when an MP4 appears. This project also treats reliability and quality as product requirements:
+Beyond producing an MP4, the pipeline treats reliability and quality as requirements:
 
 - **Resumable processing:** downloaded media, transcripts, TTS segments, and timeline blocks are checkpointed.
 - **Segment-level TTS cache:** a failed two-hour run resumes instead of restarting.
 - **Adaptive timing:** each English segment receives an estimated speaking rate and is then fitted to its original time window.
 - **Quality gates:** the pipeline measures output duration drift, tempo-adjustment pressure, warning rate, processing time, and realtime factor.
-- **Recruiter-readable evidence:** every run generates `quality_report.html`, JSON diagnostics, source/English SRT files, and processing metadata.
+- **Inspectable output:** every run generates `quality_report.html`, JSON diagnostics, source/English SRT files, and processing metadata.
 - **Long-video-safe architecture:** audio is assembled from streamed FFmpeg blocks rather than loading a two-hour timeline into Python memory.
 - **Optional background preservation:** Demucs can separate music/effects and mix them under the English dub.
 - **Clean engineering:** typed modules, CLI validation, actionable errors, unit tests, linting, Docker support, and GitHub Actions.
@@ -105,7 +105,7 @@ Use only videos you own or are authorized to download and dub.
 
 ## Recommended commands
 
-### Recruiter-quality mode
+### Quality mode
 
 Runs source-language transcription and English translation as separate auditable stages:
 
@@ -266,8 +266,8 @@ python scripts/smoke_test.py
 - [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
 - [`docs/WALKTHROUGH_SCRIPT.md`](docs/WALKTHROUGH_SCRIPT.md)
 - [`docs/SUBMISSION_CHECKLIST.md`](docs/SUBMISSION_CHECKLIST.md)
-- [`docs/RECRUITER_EVALUATION_MAP.md`](docs/RECRUITER_EVALUATION_MAP.md)
 - [`docs/VALIDATION.md`](docs/VALIDATION.md)
+- [`docs/CINEMATIC_PROFILE.md`](docs/CINEMATIC_PROFILE.md)
 
 ## License and responsible use
 

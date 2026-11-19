@@ -52,7 +52,7 @@ python main.py "TWO_HOUR_URL" --mode fast --model small --device cuda --compute-
 
 Use CPU and `--compute-type int8` when CUDA is unavailable.
 
-## What to show the recruiter
+## What to show in a demo
 
 1. `dubbed_english.mp4`
 2. `quality_report.html`

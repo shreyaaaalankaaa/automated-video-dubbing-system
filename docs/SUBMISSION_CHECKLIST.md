@@ -56,7 +56,7 @@
 Recommended Drive structure:
 
 ```text
-Idealabs_Dubbing_Assignment_Sai_Divya_Lanka/
+Idealabs_Dubbing_Assignment_Shreya_Lanka/
 ├── 01_Thirty_Minute_Run/
 │   ├── source_link.txt
 │   ├── dubbed_english.mp4

@@ -1,4 +1,4 @@
-# Cinematic Quality Upgrade
+# Cinematic quality profile
 
 Use this profile only for trailers, chants, overlapping dialogue, and music-heavy clips.
 

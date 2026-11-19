@@ -64,7 +64,7 @@ def _decode_options(content_profile: str, inference_profile: str) -> dict:
             },
         }
 
-    # balanced: the default recruiter-demo profile. It keeps short dialogue while
+    # balanced: the default demo profile. It keeps short dialogue while
     # avoiding the expensive beam-8 and word-alignment path.
     return {
         "beam_size": 2,
